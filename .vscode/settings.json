@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "biblioteca",
+            "dialect": "MySQL",
+            "name": "biblioteca",
+            "password": "123456",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}

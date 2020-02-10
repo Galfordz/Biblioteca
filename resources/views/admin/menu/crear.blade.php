@@ -6,6 +6,11 @@
     Sistema de Menús
 @endsection
 
+<!-- Se colocan los scripts de la pagina -->
+@section("scripts")
+    <script src="{{asset("assets/pages/scripts/admin/menu/crear.js")}}" type="text/javascript"></script>
+@endsection
+
 <!-- Se Inserta el contenido -->
 @section('contenido')
 
@@ -17,7 +22,7 @@
             <div class="box-header with-border">
                 <h3 class="box-title">Crear Permisos</h3>
             </div>
-            <form action="{{route('guardar_menu')}}" id="form-general" class="form-horizontal" method="POST">
+            <form action="{{route('guardar_menu')}}" id="form-general" class="form-horizontal" method="POST" autocomplete="off">
                 @csrf
                  <div class="box-body"> 
                      @include('admin.menu.form');

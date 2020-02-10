@@ -35,7 +35,7 @@ class Menu extends Model
             ->get()
             ->toArray();
         } else {
-            return $this->orderby('id_menu')
+            return $this->orderby('menu_id')
             ->orderby('orden')
             ->get()
             ->toArray();
